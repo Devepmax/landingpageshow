@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=League+Spartan:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #ECE9E6, #FFFFFF);
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+/* Header moderno con navegación a la derecha */
+header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    color: #333;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Afacad Flux';
+}
+h1 {
+    font-family:'Afacad Flux';
+}
+/* Estilos para el título del header */
+.header-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #20b6fc;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.005s ease-in-out;
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: rgba(255, 183, 3, 0.2);
+    color: #20b6fc;
+}
+
+/* Reset y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #ECE9E6, #FFFFFF);
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+/* Header moderno con navegación a la derecha */
+header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    color: #333;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-toggle {
+    display: none;
+}
+/* Estilos para el título del header */
+.header-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #20b6fc;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Menú de navegación */
+nav {
+    position: relative;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1rem;
+    transition: all 0.005s ease-in-out;
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: rgba(255, 183, 3, 0.2);
+    color: #20b6fc;
+}
+
+
+/* Secciones */
+section {
+    padding: 6rem 2rem;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+    color: #20b6fc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Arial, 'Helvetica', sans-serif;
+}
+p {
+    text-wrap: wrap;
+    text-align:center;
+    
+}
+
+ul li {
+    list-style: none;
+    text-align: center;
+
+
+}
+/* Formulario moderno */
+form {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 183, 3, 0.2);
+    transition: transform 0.1s ease-in-out;
+}
+
+form:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/* Responsive: menú deslizante desde la derecha */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /*.menu-toggle {
+        display: block;
+    }*/
+
+    /* Botón del menú hamburguesa */
+.menu-toggle {
+    display:grid;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.0rem;
+    color: #20b6fc;
+    position: relative;
+    justify-items: right;
+    
+}
+/*
+#ambr{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+
+}
+/* Usando un SVG para el ícono
+.menu-toggle svg {
+    width: 30px;
+    height: 30px;
+    fill: #20b6fc;
+    transition: transform 0.002s ease-in-out;
+
+
+}
+
+.menu-toggle:hover svg {
+    transform: scale(1.1);
+}
+    
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.9);
+        width: 200px;
+        height: 250px;
+        box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+        padding: 50px 20px;
+        transform: translateX(100%);
+        transition: transform 0.07s ease-in-out;
+        z-index: 999;
+    }
+    
+  /*  nav ul.active {
+        transform: translateX(0);
+    }
+}
+*/
+
+/*FIN DE SECCION AMBURGUESA*/
+
+.menu-toggle {
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+}
+
+.menu-toggle .close {
+    display: none; /* Ocultamos la X por defecto */
+}
+
+nav ul {
+    display: none; /* Ocultamos el menú */
+    transition: right 0.001s ease-in-out;
+}
+
+/* Cuando el menú está activo */
+nav ul.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+
+/* Cuando el menú está activo, mostramos la X y ocultamos el icono del menú */
+.menu-toggle.active .burger {
+    display: none;
+}
+
+.menu-toggle.active .close {
+    display: inline;
+}
+}
+
+input, textarea, .form-b {
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+input, textarea {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    transition: all 0.1s ease-in-out;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(100, 100, 100, 0.7);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #20b6fc;
+    box-shadow: 0 0 15px rgba(255, 87, 51, 0.5);
+}
+
+#portfolio {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.portfolio-item {
+    width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.06 );
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.portfolio-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.portfolio-item p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.portfolio-item a:hover {
+    background: #0056b3;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Botón moderno */
+.form-b {
+    background: linear-gradient(90deg, #20b6fc, #85fbff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.3s ease-in-out;
+}*/
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(6, 179, 43, 0.877);
+    transition: transform 0.1s ease-in-out;
+}
+
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+
+button:hover::after {
+    left: 100%;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 3rem 1rem;
+    }
+    form {
+        padding: 1.5rem;
+    }
+}
+

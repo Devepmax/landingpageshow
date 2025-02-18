@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <h1 img="button">Devepmax</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <span class="burger">&#9776;</span> <!-- Icono de menú -->
+            <span class="close">&times;</span>  <!-- Icono de cierre (X) -->
+        </div>
+        
+    </header>
+    
+    <section id="inicio">
+        <h2>Bienvenido</h2>
+        <p>Creamos sitios web innovadores, modernos y totalmente responsivos para clínicas y consultorios, combinando un diseño atractivo con una experiencia de usuario optimizada. Nos enfocamos en ofrecer soluciones de alta calidad a precios accesibles, asegurando que cada proyecto refleje profesionalismo y funcionalidad.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Diseño Web Personalizado</li>
+            <li>Integración con WhatsApp</li>
+            <li>Optimización SEO</li>
+            
+        </ul>
+    </section>
+
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <p>Aquí mostraré algunos proyectos realizados.</p>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="proyecto1.jpg" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto.</p>
+                    <a href="https://tuproyecto1.com" target="_blank">Ver más</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="proyecto2.jpg" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto.</p>
+                    <a href="https://tuproyecto2.com" target="_blank">Ver más</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="proyecto3.jpg" alt="Proyecto 3">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del proyecto.</p>
+                    <a href="https://tuproyecto3.com" target="_blank">Ver más</a>
+                </div>
+            </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button class="form-b" type="submit">Enviar</button>
+        </form>
+    </section>
+    <audio id="menuSound" src="menu-sound.mp3"></audio>
+
+    
+    <a href="https://wa.me/8297963471" class="whatsapp-button" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"> 
+    </a>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

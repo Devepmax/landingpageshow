@@ -1,0 +1,22 @@
+/* Botón del menú hamburguesa */
+.menu-toggle {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.0rem;
+    color: #FF5733;
+    position: relative;
+}
+
+/* Usando un SVG para el ícono */
+.menu-toggle svg {
+    width: 30px;
+    height: 30px;
+    fill: #FF5733;
+    transition: transform 0.05s ease-in-out;
+}
+
+.menu-toggle:hover svg {
+    transform: scale(1.1);
+}
